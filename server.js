@@ -1,4 +1,3 @@
-// backend/index.js
 const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
@@ -10,23 +9,22 @@ const path = require('path');
 const app = express();
 const JWT_SECRET = 'your_secret_key_here'; // replace with strong secret
 const USERS_FILE = path.join(__dirname, 'users.json');
-const JOBS_FILE = path.join(__dirname, 'jobs.json');
+const JOBS_FILE = path.join(__dirname, 'jobs.json'); // make sure you have jobs.json
 
 // ------------------ Middleware ------------------
 app.use(express.json());
 app.use(cookieParser());
-
-// Allow your deployed frontend to access the API
-const FRONTEND_URL = 'https://sravanthi-frontend.netlify.app'; // <-- your frontend URL
 app.use(cors({
-  origin: FRONTEND_URL,
+  origin: 'http://localhost:3000', // your React frontend
   credentials: true
 }));
 
 // ------------------ Users helpers ------------------
 function readUsers() {
   try {
-    if (!fs.existsSync(USERS_FILE)) fs.writeFileSync(USERS_FILE, '[]', 'utf-8');
+    if (!fs.existsSync(USERS_FILE)) {
+      fs.writeFileSync(USERS_FILE, '[]', 'utf-8'); // create if missing
+    }
     const data = fs.readFileSync(USERS_FILE, 'utf-8');
     return JSON.parse(data);
   } catch (err) {
@@ -54,13 +52,24 @@ function authenticateToken(req, res, next) {
 // ------------------ Registration ------------------
 app.post('/users/register', async (req, res) => {
   const { username, password, name } = req.body;
-  if (!username || !password || !name) return res.status(400).json({ error_msg: 'All fields are required' });
+  if (!username || !password || !name) {
+    return res.status(400).json({ error_msg: 'All fields are required' });
+  }
 
   const users = readUsers();
-  if (users.find(u => u.username === username)) return res.status(409).json({ error_msg: 'Username already exists' });
+  if (users.find(u => u.username === username)) {
+    return res.status(409).json({ error_msg: 'Username already exists' });
+  }
 
   const hashedPassword = await bcrypt.hash(password, 10);
-  const newUser = { id: users.length + 1, username, password: hashedPassword, name, role: 'PRIME_USER' };
+  const newUser = {
+    id: users.length + 1,
+    username,
+    password: hashedPassword,
+    name,
+    role: 'PRIME_USER'
+  };
+
   users.push(newUser);
   writeUsers(users);
 
@@ -80,15 +89,7 @@ app.post('/users/login', async (req, res) => {
   if (!isMatch) return res.status(401).json({ error_msg: 'Invalid password' });
 
   const token = jwt.sign({ username: user.username, role: user.role }, JWT_SECRET, { expiresIn: '1y' });
-
-  // Cookies for cross-origin requests
-  res.cookie('token', token, {
-    httpOnly: true,
-    sameSite: 'None',
-    secure: true,
-    maxAge: 3600000
-  });
-
+  res.cookie('token', token, { httpOnly: false, maxAge: 3600000 }); // 1 hour
   res.json({ message: 'Login successful', token });
 });
 
@@ -111,12 +112,16 @@ app.get('/users/profile', authenticateToken, (req, res) => {
 
 // ------------------ Jobs ------------------
 let jobs = [];
-if (fs.existsSync(JOBS_FILE)) jobs = JSON.parse(fs.readFileSync(JOBS_FILE, 'utf-8'));
+if (fs.existsSync(JOBS_FILE)) {
+  jobs = JSON.parse(fs.readFileSync(JOBS_FILE, 'utf-8'));
+}
 
+// Get all jobs with optional filters
 app.get('/jobs', authenticateToken, (req, res) => {
   let filteredJobs = [...jobs];
   const { employment_type, minimum_package, search } = req.query;
 
+  // Filter by employment type
   if (employment_type) {
     const types = employment_type.split(',');
     filteredJobs = filteredJobs.filter(job =>
@@ -124,6 +129,7 @@ app.get('/jobs', authenticateToken, (req, res) => {
     );
   }
 
+  // Filter by minimum package
   if (minimum_package) {
     const minPackage = parseInt(minimum_package, 10);
     filteredJobs = filteredJobs.filter(job => {
@@ -132,6 +138,7 @@ app.get('/jobs', authenticateToken, (req, res) => {
     });
   }
 
+  // Filter by search
   if (search) {
     const searchLower = search.toLowerCase();
     filteredJobs = filteredJobs.filter(job =>
@@ -153,6 +160,4 @@ app.get("/jobs/:id", (req, res) => {
   res.json({ job_details: job, similar_jobs: similarJobs });
 });
 
-// ------------------ Server ------------------
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(5000, () => console.log('Server running on http://localhost:5000'));
