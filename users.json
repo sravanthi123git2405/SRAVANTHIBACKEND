@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "username": "sravanthi",
+    "password": "$2b$10$hUdoWo4dDmsEcbbI0xGcQOpw3svyDYzierOzKXjIbkzEQCth3uU0a",
+    "name": "pothugantisravanthi",
+    "role": "PRIME_USER"
+  },
+  {
+    "id": 2,
+    "username": "abhiram",
+    "password": "$2b$10$UzGVAkPpfv/HSrYweCSePeX25VGTKJeBRVxGVxzUvj43wT7mMvfZS",
+    "name": "pothugantiabhiram",
+    "role": "PRIME_USER"
+  },
+  {
+    "id": 3,
+    "username": "bhanu",
+    "password": "$2b$10$sAkZ38/tCKyYIUgBFrotdu9iN3o3LxILcLPpBlvFZc2WkxLGynuWa",
+    "name": "pothugantibhanu",
+    "role": "PRIME_USER",
+    "gender": "female"
+  },
+  {
+    "id": 4,
+    "username": "abhi",
+    "password": "$2b$10$YJbCpB.LlGlnq9p6KFsQ5ua.LumRkL9WMvGQsLaBULfSHRy6BS1yG",
+    "name": "abhi",
+    "role": "PRIME_USER"
+  },
+  {
+    "id": 5,
+    "username": "kalyani",
+    "password": "$2b$10$UXY9g/m/T6RM6pFlyDOjnuYuoAmMlryYTTNAZUMBmspjQDuMw.Npy",
+    "name": "kalyani",
+    "role": "PRIME_USER"
+  }
+]

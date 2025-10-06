@@ -1,0 +1,62 @@
+### User Registration
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+  "username": "rahul",
+  "password": "rahul@2021",
+  "name": "Rahul Attuluri"
+}
+
+### User Login
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+  "username": "rahul",
+  "password": "rahul@2021"
+}
+
+### Get Profile (Protected)
+GET http://localhost:5000/users/profile
+Authorization: Bearer <paste_your_jwt_token_here>
+
+
+### Get All Jobs (Protected)
+GET http://localhost:5000/jobs
+Authorization: Bearer <paste_your_jwt_token_here>
+
+
+### Get Job by ID (Protected)
+GET http://localhost:5000/jobs/1
+Authorization: Bearer <paste_your_jwt_token_here>
+
+
+### Add a Job (Protected)
+POST http://localhost:5000/jobs
+Authorization: Bearer <paste_your_jwt_token_here>
+Content-Type: application/json
+
+{
+  "company_logo_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/google-img.png",
+  "employment_type": "Full Time",
+  "job_description": "Frontend Engineer with React.js",
+  "location": "Bangalore",
+  "package_per_annum": "15 LPA",
+  "rating": 5,
+  "title": "Frontend Engineer"
+}
+
+### Update a Job (Protected)
+PUT http://localhost:5000/jobs/1
+Authorization: Bearer <paste_your_jwt_token_here>
+Content-Type: application/json
+
+{
+  "location": "Remote",
+  "package_per_annum": "22 LPA"
+}
+
+### Delete a Job (Protected)
+DELETE http://localhost:5000/jobs/1
+Authorization: Bearer <paste_your_jwt_token_here>

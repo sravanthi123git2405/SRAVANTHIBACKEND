@@ -1,0 +1,613 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company_logo_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/netflix-img.png",
+    "employment_type": "Full Time",
+    "location": "Hyderabad",
+    "package_per_annum": "10 LPA",
+    "rating": 4.5,
+    "job_description": "We are looking for a skilled Frontend Developer to build and maintain modern web applications.",
+    "company_website_url": "https://www.netflix.com",
+    "skills": [
+      { "name": "HTML5", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/html-img.png" },
+      { "name": "CSS3", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/css-img.png" },
+      { "name": "JavaScript", "image_url": "https://img.logo.dev/javascripttutorial.net" },
+      { "name": "React", "image_url": "https://img.logo.dev/react.dev" }
+    ],
+    "life_at_company": {
+      "description": "At Netflix, we empower employees to innovate freely and own impactful projects.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-netflix-img.png"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "company_logo_url": 
+"https://img.logo.dev/google.com",
+    "employment_type": "Part Time",
+    "location": "Bangalore",
+    "package_per_annum": "8 LPA",
+    "rating": 4.2,
+    "job_description": "We need an experienced Backend Developer to design APIs and scalable services.",
+    "company_website_url": "https://careers.google.com",
+    "skills": [
+      { "name": "Node.js", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/nodejs-img.png" },
+      { "name": "Express", "image_url": "https://img.logo.dev/expressjs.com" },
+      { "name": "MongoDB", "image_url": "https://img.logo.dev/mongodb.com" },
+      { "name": "REST APIs", "image_url": "https://img.logo.dev/restfulapi.net" }
+    ],
+    "life_at_company": {
+      "description": "At Google, employees thrive in a culture of learning and collaboration.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-google-img.png"
+    }
+  },
+
+
+  {
+    "id": 3,
+    "title": "Full Stack Engineer",
+    "company_logo_url": "https://img.logo.dev/metacareers.com",
+    "employment_type": "Internship",
+    "location": "Chennai",
+    "package_per_annum": "15 LPA",
+    "rating": 4.7,
+    "job_description": "We’re hiring Full Stack Engineers to build scalable social experiences.",
+    "company_website_url": "https://www.metacareers.com",
+    "skills": [
+      { "name": "React", "image_url": "https://img.logo.dev/react.dev" },
+      { "name": "Node.js", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/nodejs-img.png" },
+      { "name": "GraphQL", "image_url": "https://img.logo.dev/graphql.org" }
+    ],
+    "life_at_company": {
+      "description": "At Meta, employees shape the future of social connections with cutting-edge tech.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-meta-img.png"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Data Scientist",
+    "company_logo_url": "https://img.logo.dev/ibm.com",
+    "employment_type": "Freelance",
+    "location": "Pune",
+    "package_per_annum": "18 LPA",
+    "rating": 4.6,
+    "job_description": "IBM is seeking Data Scientists to analyze big data and deliver business insights.",
+    "company_website_url": "https://www.ibm.com/careers",
+    "skills": [
+      { "name": "Python", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/python-img.png" },
+      { "name": "TensorFlow", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/tensorflow-img.png" },
+      { "name": "SQL", "image_url": "https://img.logo.dev/repair-sql.net" }
+    ],
+    "life_at_company": {
+      "description": "At IBM, employees contribute to pioneering AI and data-driven solutions.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-ibm-img.png"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Mobile App Developer",
+    "company_logo_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
+    "employment_type": "Full Time",
+    "location": "Delhi",
+    "package_per_annum": "12 LPA",
+    "rating": 4.3,
+    "job_description": "Join Amazon to create innovative mobile applications at scale.",
+    "company_website_url": "https://www.amazon.jobs",
+    "skills": [
+      { "name": "Kotlin", "image_url": "https://img.logo.dev/kotlinlang.org" },
+      { "name": "Swift", "image_url": "https://img.logo.dev/swift.com" },
+      { "name": "React Native", "image_url": "https://img.logo.dev/reactnative.dev" }
+    ],
+    "life_at_company": {
+      "description": "At Amazon, customer obsession drives innovation and growth opportunities.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-amazon-img.png"
+    }
+  },
+  {
+    "id": 6,
+    "title": "DevOps Engineer",
+    "company_logo_url": "https://img.logo.dev/microsoft.com",
+    "employment_type": "Part Time",
+    "location": "Hyderabad",
+    "package_per_annum": "13 LPA",
+    "rating": 4.4,
+    "job_description": "Microsoft is hiring DevOps Engineers to manage CI/CD pipelines and cloud deployments.",
+    "company_website_url": "https://careers.microsoft.com",
+    "skills": [
+      { "name": "Azure", "image_url": "https://img.logo.dev/azurebiotech.com" },
+      { "name": "Docker", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/docker-img.png" },
+      { "name": "Kubernetes", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/kubernetes-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Microsoft, innovation and collaboration drive impactful solutions worldwide.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-microsoft-img.png"
+    }
+  },
+  {
+    "id": 7,
+    "title": "UI/UX Designer",
+    "company_logo_url": "https://img.logo.dev/adobe.com",
+    "employment_type": "Internship",
+    "location": "Bangalore",
+    "package_per_annum": "9 LPA",
+    "rating": 4.2,
+    "job_description": "Adobe is looking for creative UI/UX Designers to craft user-friendly digital experiences.",
+    "company_website_url": "https://adobe.wd5.myworkdayjobs.com",
+    "skills": [
+      { "name": "Figma", "image_url": "https://img.logo.dev/figma.com" },
+      { "name": "Sketch", "image_url": "https://img.logo.dev/sketch.com" },
+      { "name": "Adobe XD", "image_url": "https://img.logo.dev/adobe.com" }
+    ],
+    "life_at_company": {
+      "description": "At Adobe, designers thrive in a creative and collaborative environment.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-adobe-img.png"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Cloud Architect",
+    "company_logo_url": "https://img.logo.dev/oracle.com",
+    "employment_type": "Freelance",
+    "location": "Mumbai",
+    "package_per_annum": "20 LPA",
+    "rating": 4.8,
+    "job_description": "Oracle is hiring Cloud Architects to design enterprise-grade cloud infrastructure.",
+    "company_website_url": "https://www.oracle.com/corporate/careers",
+    "skills": [
+      { "name": "AWS", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/aws-img.png" },
+      { "name": "GCP", "image_url": "https://img.logo.dev/googlecloudpresscorner.com" },
+      { "name": "Terraform", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/terraform-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Oracle, employees drive digital transformation with world-class cloud technologies.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-oracle-img.png"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Machine Learning Engineer",
+    "company_logo_url": "https://img.logo.dev/nvidas.pt",
+    "employment_type": "Full Time",
+    "location": "Bangalore",
+    "package_per_annum": "22 LPA",
+    "rating": 4.9,
+    "job_description": "NVIDIA seeks ML Engineers to work on AI-driven graphics and autonomous systems.",
+    "company_website_url": "https://nvidia.wd5.myworkdayjobs.com",
+    "skills": [
+      { "name": "PyTorch", "image_url": "https://img.logo.dev/pytorch.org" },
+      { "name": "Deep Learning", "image_url": "https://img.logo.dev/deeplearning.ai" },
+      { "name": "CUDA", "image_url": "https://img.logo.dev/cuda.ie" }
+    ],
+    "life_at_company": {
+      "description": "At NVIDIA, innovation in AI and GPU computing drives groundbreaking solutions.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-nvidia-img.png"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Business Analyst",
+    "company_logo_url": "https://img.logo.dev/deloitte.com",
+    "employment_type": "Part Time",
+    "location": "Hyderabad",
+    "package_per_annum": "11 LPA",
+    "rating": 4.3,
+    "job_description": "Deloitte is looking for Business Analysts to translate data into actionable insights.",
+    "company_website_url": "https://jobs.deloitte.com",
+    "skills": [
+      { "name": "Excel", "image_url": "https://img.logo.dev/msexcelpt.com" },
+      { "name": "Tableau", "image_url": "https://img.logo.dev/tableau.com" },
+      { "name": "SQL", "image_url": "https://img.logo.dev/repair-sql.net" }
+    ],
+    "life_at_company": {
+      "description": "At Deloitte, analysts work closely with clients to drive business transformation.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-deloitte-img.png"
+    }
+  },
+  
+  {
+    "id": 11,
+    "title": "Cybersecurity Analyst",
+    "company_logo_url": "https://img.logo.dev/cisco.com",
+    "employment_type": "Freelance",
+    "location": "Gurgaon",
+    "package_per_annum": "14 LPA",
+    "rating": 4.4,
+    "job_description": "Cisco is hiring Cybersecurity Analysts to secure enterprise networks and cloud systems.",
+    "company_website_url": "https://jobs.cisco.com",
+    "skills": [
+      { "name": "Network Security", "image_url": "https://img.logo.dev/nssplus.com" },
+      { "name": "Firewalls", "image_url": "https://img.logo.dev/firewalls.com" },
+      { "name": "Excel", "image_url": "https://img.logo.dev/msexcelpt.com" }
+    ],
+    "life_at_company": {
+      "description": "At Cisco, employees secure the future of digital transformation with cutting-edge tech.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-cisco-img.png"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Game Developer",
+    "company_logo_url": "https://img.logo.dev/eatthis.com",
+    "employment_type": "Internship",
+    "location": "Pune",
+    "package_per_annum": "12 LPA",
+    "rating": 4.3,
+    "job_description": "Electronic Arts is hiring Game Developers to create immersive gaming experiences.",
+    "company_website_url": "https://ea.gr8people.com",
+    "skills": [
+      { "name": "Unity", "image_url": "https://img.logo.dev/unity.com" },
+      { "name": "C#", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/csharp-img.png" },
+      { "name": "3D Modeling", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/3d-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At EA, game developers innovate and create world-class gaming experiences.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-ea-img.png"
+    }
+  },
+  {
+    "id": 13,
+    "title": "AI Research Scientist",
+    "company_logo_url": "https://img.logo.dev/openai.com",
+    "employment_type": "Full Time",
+    "location": "Remote",
+    "package_per_annum": "28 LPA",
+    "rating": 4.9,
+    "job_description": "OpenAI is hiring AI Research Scientists to push the boundaries of artificial intelligence.",
+    "company_website_url": "https://openai.com/careers",
+    "skills": [
+      { "name": "Deep Learning", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/deeplearning-img.png" },
+      { "name": "Reinforcement Learning", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/rl-img.png" },
+      { "name": "Python", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/python-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At OpenAI, employees advance cutting-edge AI to ensure it benefits humanity.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-openai-img.png"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Blockchain Developer",
+    "company_logo_url": "https://img.logo.dev/consensys.io",
+    "employment_type": "Part Time",
+    "location": "Bangalore",
+    "package_per_annum": "19 LPA",
+    "rating": 4.6,
+    "job_description": "Consensys is hiring Blockchain Developers to build next-gen decentralized apps.",
+    "company_website_url": "https://consensys.net/careers",
+    "skills": [
+      { "name": "Solidity", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/solidity-img.png" },
+      { "name": "Ethereum", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/ethereum-img.png" },
+      { "name": "Web3.js", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/web3-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Consensys, developers lead blockchain innovation and decentralized applications.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-consensys-img.png"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Data Engineer",
+    "company_logo_url": "https://img.logo.dev/snowflake.com",
+    "employment_type": "Freelance",
+    "location": "Hyderabad",
+    "package_per_annum": "16 LPA",
+    "rating": 4.5,
+    "job_description": "Snowflake is hiring Data Engineers to design and maintain modern data pipelines.",
+    "company_website_url": "https://careers.snowflake.com",
+    "skills": [
+      { "name": "SQL", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/sql-img.png" },
+      { "name": "ETL", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/etl-img.png" },
+      { "name": "BigQuery", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/bigquery-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Snowflake, employees work on modern cloud data platforms that scale globally.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-snowflake-img.png"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Product Manager",
+    "company_logo_url": "https://img.logo.dev/airbnb.com",
+    "employment_type": "Internship",
+    "location": "Remote",
+    "package_per_annum": "20 LPA",
+    "rating": 4.7,
+    "job_description": "Airbnb is seeking Product Managers to define product strategies and roadmaps.",
+    "company_website_url": "https://careers.airbnb.com",
+    "skills": [
+      { "name": "Agile", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/agile-img.png" },
+      { "name": "Product Strategy", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/strategy-img.png" },
+      { "name": "Roadmapping", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/roadmap-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Airbnb, employees redefine travel experiences by building community-driven products.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-airbnb-img.png"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Systems Administrator",
+    "company_logo_url": "https://img.logo.dev/hp.com",
+    "employment_type": "Full Time",
+    "location": "Chennai",
+    "package_per_annum": "9 LPA",
+    "rating": 4.1,
+    "job_description": "HP is hiring Systems Administrators to manage enterprise IT infrastructure.",
+    "company_website_url": "https://jobs.hp.com",
+    "skills": [
+      { "name": "Linux", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/linux-img.png" },
+      { "name": "Windows Server", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/windows-img.png" },
+      { "name": "Networking", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/network-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At HP, employees support enterprise systems that power businesses worldwide.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-hp-img.png"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Digital Marketing Specialist",
+    "company_logo_url": "https://img.logo.dev/hubspot.com",
+    "employment_type": "Part Time",
+    "location": "Delhi",
+    "package_per_annum": "7 LPA",
+    "rating": 4.0,
+    "job_description": "HubSpot is hiring Digital Marketing Specialists to manage campaigns and SEO strategies.",
+    "company_website_url": "https://www.hubspot.com/careers",
+    "skills": [
+      { "name": "SEO", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/seo-img.png" },
+      { "name": "Google Analytics", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/analytics-img.png" },
+      { "name": "Content Marketing", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/content-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At HubSpot, employees innovate digital marketing strategies that drive customer growth.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-hubspot-img.png"
+    }
+  },
+  {
+    "id": 19,
+    "title": "QA Engineer",
+    "company_logo_url": "https://img.logo.dev/infosys.com",
+    "employment_type": "Internship",
+    "location": "Mysore",
+    "package_per_annum": "8 LPA",
+    "rating": 4.2,
+    "job_description": "Infosys is hiring QA Engineers to test software products and ensure quality standards.",
+    "company_website_url": "https://www.infosys.com/careers",
+    "skills": [
+      { "name": "Selenium", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/selenium-img.png" },
+      { "name": "JIRA", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/jira-img.png" },
+      { "name": "Manual Testing", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/manualtest-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Infosys, employees ensure product quality through rigorous testing.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-infosys-img.png"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Database Administrator",
+    "company_logo_url": "https://img.logo.dev/oracle.com",
+    "employment_type": "Freelance",
+    "location": "Hyderabad",
+    "package_per_annum": "13 LPA",
+    "rating": 4.3,
+    "job_description": "Oracle is hiring Database Administrators to manage enterprise-grade databases.",
+    "company_website_url": "https://www.oracle.com/corporate/careers",
+    "skills": [
+      { "name": "Oracle DB", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/oracledb-img.png" },
+      { "name": "PostgreSQL", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/postgres-img.png" },
+      { "name": "Backup & Recovery", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/backup-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Oracle, DBAs ensure mission-critical databases run efficiently and securely.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-oracle-img.png"
+    }
+  },
+
+  {
+    "id": 21,
+    "title": "Cloud Architect",
+    "company_logo_url": "https://img.logo.dev/amazon.com",
+    "employment_type": "Full Time",
+    "location": "Bangalore",
+    "package_per_annum": "25 LPA",
+    "rating": 4.8,
+    "job_description": "AWS is hiring Cloud Architects to design and manage scalable cloud infrastructure.",
+    "company_website_url": "https://aws.amazon.com/careers",
+    "skills": [
+      { "name": "AWS", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/aws-skill-img.png" },
+      { "name": "Kubernetes", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/kubernetes-img.png" },
+      { "name": "Terraform", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/terraform-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At AWS, employees innovate on global cloud solutions used by millions of businesses.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-aws-img.png"
+    }
+  },
+  {
+    "id": 22,
+    "title": "Business Analyst",
+    "company_logo_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/deloitte-img.png",
+    "employment_type": "Part Time",
+    "location": "Mumbai",
+    "package_per_annum": "10 LPA",
+    "rating": 4.2,
+    "job_description": "Deloitte is hiring Business Analysts to analyze client requirements and deliver insights.",
+    "company_website_url": "https://jobs.deloitte.com",
+    "skills": [
+      { "name": "Excel", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/excel-img.png" },
+      { "name": "SQL", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/sql-img.png" },
+      { "name": "Data Visualization", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/dataviz-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Deloitte, analysts work on challenging problems with clients worldwide.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-deloitte-img.png"
+    }
+  },
+  {
+    "id": 23,
+    "title": "UI/UX Designer",
+    "company_logo_url": "https://img.logo.dev/adobe.com",
+    "employment_type": "Freelance",
+    "location": "Noida",
+    "package_per_annum": "15 LPA",
+    "rating": 4.6,
+    "job_description": "Adobe is hiring UI/UX Designers to design intuitive user interfaces for global products.",
+    "company_website_url": "https://adobe.wd5.myworkdayjobs.com",
+    "skills": [
+      { "name": "Figma", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/figma-img.png" },
+      { "name": "Photoshop", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/photoshop-img.png" },
+      { "name": "Prototyping", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/prototype-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Adobe, creativity thrives and employees design experiences that inspire.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-adobe-img.png"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Frontend Engineer",
+    "company_logo_url": "https://img.logo.dev/netflix.com",
+    "employment_type": "Internship",
+    "location": "Bangalore",
+    "package_per_annum": "22 LPA",
+    "rating": 4.7,
+    "job_description": "Netflix is hiring Frontend Engineers to build performant and scalable web applications.",
+    "company_website_url": "https://jobs.netflix.com",
+    "skills": [
+      { "name": "React", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/react-img.png" },
+      { "name": "JavaScript", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/javascript-img.png" },
+      { "name": "GraphQL", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/graphql-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Netflix, employees innovate to deliver seamless entertainment experiences.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-netflix-img.png"
+    }
+  },
+  {
+    "id": 25,
+    "title": "AR/VR Developer",
+    "company_logo_url": "https://img.logo.dev/meta.com",
+    "employment_type": "Full Time",
+    "location": "Hyderabad",
+    "package_per_annum": "23 LPA",
+    "rating": 4.8,
+    "job_description": "Meta is hiring AR/VR Developers to build immersive experiences in the metaverse.",
+    "company_website_url": "https://www.metacareers.com",
+    "skills": [
+      { "name": "Unity", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/unity-img.png" },
+      { "name": "C++", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/cpp-img.png" },
+      { "name": "ARKit/ARCore", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/arcore-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Meta, developers create groundbreaking AR and VR experiences for billions of users.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-meta-img.png"
+    }
+  },
+  {
+    "id": 26,
+    "title": "DevOps Engineer",
+    "company_logo_url": "https://img.logo.dev/github.com",
+    "employment_type": "Part Time",
+    "location": "Remote",
+    "package_per_annum": "18 LPA",
+    "rating": 4.5,
+    "job_description": "GitHub is hiring DevOps Engineers to manage CI/CD pipelines and deployment workflows.",
+    "company_website_url": "https://github.com/about/careers",
+    "skills": [
+      { "name": "Docker", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/docker-img.png" },
+      { "name": "CI/CD", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/cicd-img.png" },
+      { "name": "Monitoring", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/monitor-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At GitHub, employees empower developers worldwide with open-source innovation.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-github-img.png"
+    }
+  },
+  {
+    "id": 27,
+    "title": "Salesforce Developer",
+    "company_logo_url": "https://img.logo.dev/salesforce.com",
+    "employment_type": "Internship",
+    "location": "Pune",
+    "package_per_annum": "14 LPA",
+    "rating": 4.3,
+    "job_description": "Salesforce is hiring Developers to customize and integrate Salesforce solutions.",
+    "company_website_url": "https://salesforce.wd1.myworkdayjobs.com",
+    "skills": [
+      { "name": "Apex", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/apex-img.png" },
+      { "name": "Lightning", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/lightning-img.png" },
+      { "name": "Integration", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/integration-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Salesforce, developers deliver cloud solutions that transform customer experiences.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-salesforce-img.png"
+    }
+  },
+  {
+    "id": 28,
+    "title": "IT Support Specialist",
+    "company_logo_url": "https://img.logo.dev/ibm.com",
+    "employment_type": "Freelance",
+    "location": "Chennai",
+    "package_per_annum": "7 LPA",
+    "rating": 4.0,
+    "job_description": "IBM is hiring IT Support Specialists to assist clients with troubleshooting and IT solutions.",
+    "company_website_url": "https://www.ibm.com/employment",
+    "skills": [
+      { "name": "Helpdesk", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/helpdesk-img.png" },
+      { "name": "Active Directory", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/ad-img.png" },
+      { "name": "Troubleshooting", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/troubleshoot-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At IBM, employees solve global IT challenges with cutting-edge solutions.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-ibm-img.png"
+    }
+  },
+  {
+    "id": 29,
+    "title": "Mobile App Developer",
+    "company_logo_url": "https://img.logo.dev/spotify.com",
+    "employment_type": "Full Time",
+    "location": "Remote",
+    "package_per_annum": "17 LPA",
+    "rating": 4.6,
+    "job_description": "Spotify is hiring Mobile App Developers to deliver seamless music streaming experiences.",
+    "company_website_url": "https://www.lifeatspotify.com",
+    "skills": [
+      { "name": "Kotlin", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/kotlin-img.png" },
+      { "name": "Swift", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/swift-img.png" },
+      { "name": "React Native", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/reactnative-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At Spotify, employees create music experiences that reach millions worldwide.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-spotify-img.png"
+    }
+  },
+  {
+    "id": 30,
+    "title": "AI/ML Engineer",
+    "company_logo_url": "https://img.logo.dev/nvidia.com",
+    "employment_type": "Part Time",
+    "location": "Bangalore",
+    "package_per_annum": "26 LPA",
+    "rating": 4.9,
+    "job_description": "NVIDIA is hiring AI/ML Engineers to build advanced machine learning models and frameworks.",
+    "company_website_url": "https://nvidia.wd5.myworkdayjobs.com",
+    "skills": [
+      { "name": "TensorFlow", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/tensorflow-img.png" },
+      { "name": "PyTorch", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/pytorch-img.png" },
+      { "name": "CUDA", "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/cuda-img.png" }
+    ],
+    "life_at_company": {
+      "description": "At NVIDIA, engineers pioneer AI breakthroughs that shape the future of computing.",
+      "image_url": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-nvidia-img.png"
+    }
+  }
+
+
+
+  
+]
