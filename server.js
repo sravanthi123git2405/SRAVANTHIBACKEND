@@ -7,15 +7,20 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const JWT_SECRET = 'your_secret_key_here'; // replace with strong secret
+const JWT_SECRET = 'your_secret_key_here'; // replace with a strong secret
 const USERS_FILE = path.join(__dirname, 'users.json');
-const JOBS_FILE = path.join(__dirname, 'jobs.json'); // make sure you have jobs.json
+const JOBS_FILE = path.join(__dirname, 'jobs.json');
 
 // ------------------ Middleware ------------------
 app.use(express.json());
 app.use(cookieParser());
+
+// ✅ Allow both local and deployed frontend
 app.use(cors({
-  origin: 'http://localhost:3000', // your React frontend
+  origin: [
+    'http://localhost:3000',                      // for local dev
+    'https://sravanthi123git2405.github.io'       // for GitHub Pages
+  ],
   credentials: true
 }));
 
@@ -121,7 +126,6 @@ app.get('/jobs', authenticateToken, (req, res) => {
   let filteredJobs = [...jobs];
   const { employment_type, minimum_package, search } = req.query;
 
-  // Filter by employment type
   if (employment_type) {
     const types = employment_type.split(',');
     filteredJobs = filteredJobs.filter(job =>
@@ -129,7 +133,6 @@ app.get('/jobs', authenticateToken, (req, res) => {
     );
   }
 
-  // Filter by minimum package
   if (minimum_package) {
     const minPackage = parseInt(minimum_package, 10);
     filteredJobs = filteredJobs.filter(job => {
@@ -138,7 +141,6 @@ app.get('/jobs', authenticateToken, (req, res) => {
     });
   }
 
-  // Filter by search
   if (search) {
     const searchLower = search.toLowerCase();
     filteredJobs = filteredJobs.filter(job =>
@@ -151,7 +153,8 @@ app.get('/jobs', authenticateToken, (req, res) => {
   res.json({ jobs: filteredJobs, total: filteredJobs.length });
 });
 
-app.get("/jobs/:id", (req, res) => {
+// Get job details
+app.get('/jobs/:id', (req, res) => {
   const { id } = req.params;
   const job = jobs.find(j => j.id === parseInt(id));
   if (!job) return res.status(404).json({ error: "Job not found" });
@@ -160,4 +163,6 @@ app.get("/jobs/:id", (req, res) => {
   res.json({ job_details: job, similar_jobs: similarJobs });
 });
 
-app.listen(5000, () => console.log('Server running on http://localhost:5000'));
+// ------------------ Server Start ------------------
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
