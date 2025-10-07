@@ -18,11 +18,21 @@ app.use(cookieParser());
 // ✅ Allow both local and deployed frontend
 app.use(cors({
   origin: [
-    'http://localhost:3000',                      // for local dev
-    'https://sravanthi123git2405.github.io'       // for GitHub Pages
+    'http://localhost:3000',                      // local dev
+    'https://sravanthi123git2405.github.io'       // GitHub Pages
   ],
   credentials: true
 }));
+
+// ✅ Add Access-Control headers for cross-site cookies
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.header('Access-Control-Allow-Origin', req.headers.origin);
+  res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+  if (req.method === 'OPTIONS') return res.sendStatus(200);
+  next();
+});
 
 // ------------------ Users helpers ------------------
 function readUsers() {
@@ -94,7 +104,15 @@ app.post('/users/login', async (req, res) => {
   if (!isMatch) return res.status(401).json({ error_msg: 'Invalid password' });
 
   const token = jwt.sign({ username: user.username, role: user.role }, JWT_SECRET, { expiresIn: '1y' });
-  res.cookie('token', token, { httpOnly: false, maxAge: 3600000 }); // 1 hour
+
+  // ✅ Set cookie properly for Render + GitHub Pages
+  res.cookie('token', token, {
+    httpOnly: false,
+    secure: true,       // required for HTTPS on Render
+    sameSite: 'none',   // required for cross-site cookie
+    maxAge: 3600000     // 1 hour
+  });
+
   res.json({ message: 'Login successful', token });
 });
 
